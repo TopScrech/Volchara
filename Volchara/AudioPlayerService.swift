@@ -1,9 +1,9 @@
-import AVFoundation
 import Foundation
+import AVFoundation
 
 final class AudioPlayerService: NSObject, AVAudioPlayerDelegate {
     private var players: [AVAudioPlayer] = []
-
+    
     func play(url: URL) {
         do {
             let player = try AVAudioPlayer(contentsOf: url)
@@ -15,7 +15,7 @@ final class AudioPlayerService: NSObject, AVAudioPlayerDelegate {
             print("volchara: failed to play \(url.lastPathComponent): \(error.localizedDescription)")
         }
     }
-
+    
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         players.removeAll { $0 === player }
     }

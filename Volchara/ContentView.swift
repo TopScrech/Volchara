@@ -2,30 +2,30 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var viewModel = ContentViewModel()
-
+    
     var body: some View {
         @Bindable var viewModel = viewModel
-
+        
         VStack(alignment: .leading, spacing: 16) {
             Text("Volchara")
                 .font(.largeTitle.weight(.bold))
-
+            
             ModePickerView(selectedMode: $viewModel.selectedMode)
-
+            
             SensitivityControlView(minAmplitude: $viewModel.minAmplitude)
-
+            
             ActionButtonsView(
                 isListening: viewModel.isListening,
                 toggleAction: viewModel.toggleListening,
                 testAction: viewModel.triggerTestSlap
             )
-
+            
             StatusPanelView(
                 statusText: viewModel.statusText,
                 lastSlapText: viewModel.lastSlapText,
                 copyAction: viewModel.copyStatusToClipboard
             )
-
+            
             Spacer(minLength: 0)
         }
         .padding(20)
