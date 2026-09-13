@@ -9,7 +9,7 @@
 /* Begin PBXFileReference section */
 		F345C9472F54CBB00043A35C /* Volchara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volchara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F345CAFB2F54D4BB0043A35C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F345CAFD2F54D5440043A35C /* UNLICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UNLICENSE.txt; sourceTree = "<group>"; };
+		F345CAFD2F54D5440043A35C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,7 +35,7 @@
 			isa = PBXGroup;
 			children = (
 				F345CAFB2F54D4BB0043A35C /* README.md */,
-				F345CAFD2F54D5440043A35C /* UNLICENSE.txt */,
+				F345CAFD2F54D5440043A35C /* LICENSE.txt */,
 				F345C9492F54CBB00043A35C /* Volchara */,
 				F345C9482F54CBB00043A35C /* Products */,
 			);
