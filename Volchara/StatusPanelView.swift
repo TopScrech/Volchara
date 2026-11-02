@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct StatusPanelView: View {
     let statusText: String
@@ -9,7 +9,7 @@ struct StatusPanelView: View {
         VStack(alignment: .leading, spacing: 6) {
             HStack {
                 Text("Status")
-                    .font(.headline)
+                    .headline()
                 
                 Spacer(minLength: 0)
                 

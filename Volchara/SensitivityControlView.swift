@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct SensitivityControlView: View {
     @Binding var minAmplitude: Double
@@ -6,7 +6,7 @@ struct SensitivityControlView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Sensitivity")
-                .font(.headline)
+                .headline()
             
             HStack(spacing: 12) {
                 Slider(value: $minAmplitude, in: 0.05 ... 0.9, step: 0.01)
